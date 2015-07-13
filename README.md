@@ -6,4 +6,4 @@ mkflashable [pathtoboot.img]
 The signed zip can be found at the out folder, the matching md5sum at the md5 folder.
 
 
-The signapk tool was created by google. You can find more information [here](https://code.google.com/p/signapk/).
+The signapk tool wasn't created by me. You can find more information [here](https://code.google.com/p/signapk/).
