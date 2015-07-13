@@ -1,0 +1,10 @@
+ui_print("***********************************************");
+ui_print("*            StormySeaKernel 1.4              *");
+ui_print("*     by GrinningFerret @xda-developers       *");
+ui_print("***********************************************");
+ui_print("Installing...");
+show_progress(0.5, 1);
+package_extract_file("boot.img", "/dev/block/platform/msm_sdcc.1/by-name/boot");
+show_progress(0.5, 1);
+ui_print(" ");
+ui_print("Done!");

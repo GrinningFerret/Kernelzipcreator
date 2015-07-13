@@ -1,0 +1,25 @@
+#!/bin/bash
+if [ ! $1 ]
+then
+echo -e "Kernel path: "
+read filepath
+cp $filepath ~/mkflashable/
+cd ~/mkflashable/
+echo -e "Enter target file name:"
+read filename
+zip -r $filename.zip boot.img META-INF
+signzip.sh $filename.zip
+rm $filename.zip
+mv signed_$filename.zip ~/mkflashable/out/
+mv signed_$filename.zip.md5sum ~/mkflashable/md5/
+else
+cp $1 ~/mkflashable/
+cd ~/mkflashable/
+echo -e "Enter target file name:"
+read filename
+zip -r $filename.zip boot.img META-INF
+signzip.sh $filename.zip
+rm $filename.zip
+mv signed_$filename.zip ~/mkflashable/out/
+mv signed_$filename.zip.md5sum ~/mkflashable/md5/
+fi
