@@ -1,0 +1,5 @@
+#!/bin/bash
+rm -rf ~/mkflashable/boot.img
+rm -rf ~/mkflashable/out/*.zip
+rm -rf ~/mkflashable/md5/*.md5sum
+echo "Cleaned!"

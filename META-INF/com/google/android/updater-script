@@ -1,5 +1,5 @@
 ui_print("***********************************************");
-ui_print("*            StormySeaKernel 1.4              *");
+ui_print("*            StormySeaKernel 1.5              *");
 ui_print("*     by GrinningFerret @xda-developers       *");
 ui_print("***********************************************");
 ui_print("Installing...");
