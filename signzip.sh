@@ -19,7 +19,7 @@ echo -e "Usage: signzip [FILENAME]"
 else
 echo -e "Signing zip..."
 sleep 2
-java -jar ~/signapk/signapk.jar ~/signapk/testkey.x509.pem ~/signapk/testkey.pk8 $1 "signed_"$1
+java -jar signapk.jar testkey.x509.pem testkey.pk8 $1 "signed_"$1
 md5sum "signed_"$1 > "signed_"$1.md5sum
 $lblue
 echo -e "Package completed: "signed_"$1 "
