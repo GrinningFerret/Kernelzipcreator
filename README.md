@@ -1,10 +1,9 @@
-#This as an automated flashable kernel zip generator.
-Put the folder in your home directory (should look like this: ~/mkflashable/).
+# This as an automated flashable kernel zip generator.
+Customize the updater script (META-INF/com/google/android/updater-script) to your liking
 
-Run it with:
-mkflashable [pathtoboot.img]
+$ mkflashable -k=, --kernel-path="PATH" -o=, --output-name="FILENAME"
 
-The signed zip can be found at the out folder, the matching md5sum at the md5 folder.
+The signed zip can be found at the out folder, along with the matching md5sum.
 
-
-The signapk tool wasn't created by me. You can find more information [here](https://code.google.com/p/signapk/).
+The signapk tool wasn't created by me. You can find the source
+[here](https://android.googlesource.com/platform/build/+/master/tools/signapk/).
